@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数据类型</title>
+		<!--脚本语言  没有明确的位置要求-->
+		<script type="text/javascript">
+			/*
+			 数据类型：
+			 1.underfined:这个值未定义,类似于java中未初始化
+			 2.boolean   布尔类型
+			 3.string 字符串类型  var str="hello";
+			 4.number 数值型
+			 5.object 对象类型   null
+			 
+			 * */
+			var a;
+			document.write("a=" + a +"</br>");
+			
+			var f=false;
+			document.write("f="+f);
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var str="12345"+8;
+			var x=1;
+//			var y=3xy;
+//			alert(typeof y);//弹出对话框  alert（对话框内容）
+			//数据类型的转换   Number--->String
+			var b=123;
+			str=b.toString();
+			alert(typeof str+"--->"+str)
+			
+			var s="12345";   //string---->number   NaN  not a number 
+			alert(Number(s));
+			alert(parseInt("123x"));
+			
+			
+		</script>
+	</body>
+</html>

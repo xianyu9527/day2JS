@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>运算符</title>
+	</head>
+
+	<body>
+		<script>
+			var x=1;
+			var y=2;
+//			alert(x+y);
+			var z =x+y;
+			document.write("x+y="+(x+y)+"<br />");
+			document.write("z="+((++z)+(y--))+"<br />");
+			
+			//赋值和关系
+			var n="1";
+			document.write((x==n)+"<br />");//比较的是变量的值，不考虑数据类型
+			document.write((x===n)+"<br />");//比较的是值和数据类型
+			
+			//逻辑运算符
+			document.write((x===y)||(x==y));//true
+			
+		</script>
+	</body>
+
+</html>

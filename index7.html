@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>函数定义</title>
+		<style>
+			a{
+				display: inline-block;
+				width: 80px;
+				height: 20px;
+				background-color: blue;
+				color: white;
+				text-decoration: none;
+				font-size: 14px;
+				text-align: center;
+				line-height: 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<script>
+			/*
+			 function 函数名称(参数,参数){
+			 	函数体
+			 }
+			 * 
+			 * 
+			 * */
+			function printMsg(){
+				alert("你好啊!");
+			}
+			
+			//带参数的方法
+			function printMsg(a){
+				document.write("<table border='1' cellspacing='0' width='100' height='200'>")
+			//打印行
+			for(i=1;i<a;i++){
+				document.write("<tr><td>"+ i+"</td><td>"+i+"</td></tr>")
+			}
+			document.write("</table>");
+			}
+			
+			//带返回值的函数定义
+			function print(str){
+				if(str=="admin"){
+					return "登陆成功";
+				}else{
+					return "登录失败";
+				}
+			}
+			//函数之间的调用
+			function print1(str){
+				//调用 print(str)
+				var x=print(str);
+				alert(x);
+			}
+		</script>
+		<a href="javascript:printMsg();">点击我</a>
+		<br />
+		<!--onclick 称作按钮的点击事件   事件就是动作-->
+		<button onclick="printMsg()">点我啊</button>
+		<br />
+		<br />
+		<button onclick="printMsg(10)">打印表格</button>
+		<br />
+		<br />
+		<button onclick="print1('admin')">登录</button>
+	</body>
+</html>

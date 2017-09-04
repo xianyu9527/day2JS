@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数组操作</title>
+	</head>
+	<body>
+		<script>
+			//数组的声明
+			var arr=new Array(8);
+			document.write(arr.length+"<br />");
+			arr[5]=8;
+			document.write(arr[5]+"<br />");
+			//下标可以超过初始的声明长度，数组的length也会发生改变
+			arr[50]=100;
+			document.write(arr[50]+"<br />");
+			for(i=0;i++;i<55){
+				arr[i]=60;
+			}
+			document.write(arr.length+"<br />");
+			//声明数组二
+			var arr1=new Array("tom","lucy","lily");
+			document.write(arr1[2]);
+			
+			var arr2=["tom","lucy","lily","饼干","老王史蒂文"];
+			document.write(arr2[3]);
+		</script>
+	</body>
+</html>

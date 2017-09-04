@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分支结构</title>
+	</head>
+	<body>
+		<script>
+			var a=10;
+			var b=9;
+			if(a>(++b))
+			{
+				document.write("a大于b！");
+			}else{
+				document.write("a小于或者等于b");
+			}
+			//用于计算表达式结果
+			var c=eval(a+b/4);
+			document.write(c);
+			
+			//isNaN()  判断是否是非数字      返回值true，false    NaN
+			var d="xy";
+			document.write(isNaN(d));
+			
+			//switch...case
+			var m =2;
+			switch(m)
+			{
+				case 1:
+				document.write("--->1");
+				break;
+				case 2:
+				document.write("--->2");
+				break;
+				default:
+				document.write("--->default");
+				break;
+			}
+			
+			
+		</script>
+	</body>
+</html>
